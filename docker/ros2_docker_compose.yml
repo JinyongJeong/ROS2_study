@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  dev:
+    image: ros2_humble_jjy:latest
+    build:
+      context: ../
+      dockerfile: ./docker/ros2.Dockerfile    
+    tty: true 
+    container_name: ros2_humble_jjy
+    network_mode: host
+    privileged: false
+    volumes:
+      - ../:/ros2_study
+    command: bash -c "/bin/bash"
+
