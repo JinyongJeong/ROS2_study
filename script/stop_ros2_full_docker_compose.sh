@@ -7,5 +7,5 @@ to_abs_path() {
 MAIN_ABS_PATH=$(to_abs_path ../)
 SCRIPT_FOLDER_ABS_PATH=$(to_abs_path ./)
 
-docker compose -f ${MAIN_ABS_PATH}/docker/ros2_docker_compose.yml down
+docker compose -f ${MAIN_ABS_PATH}/docker/ros2_desktop_full_docker_compose.yml down
 
