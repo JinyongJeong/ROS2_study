@@ -2,12 +2,12 @@ version: '3.3'
 
 services:
   dev:
-    image: ros2_jjy0923:humble-desktop-full
+    image: ros2_custom:humble-desktop-full
     build:
       context: ../
-      dockerfile: ./docker/ros2_desktop_full.Dockerfile 
+      dockerfile: ./docker/ros2_humble_desktop_full.Dockerfile 
     tty: true 
-    container_name: ros2_humble_jjy
+    container_name: ros2_humble
     network_mode: host
     privileged: true
     environment:
