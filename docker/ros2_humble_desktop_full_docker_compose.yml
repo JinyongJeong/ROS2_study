@@ -14,6 +14,7 @@ services:
       - DISPLAY=$DISPLAY
     volumes:
       - ../:/ros2_study
+      - ~/ros:/ros
       - ~/.ros/:/root/.ros
       - /tmp/.X11-unix/:/tmp/.X11-unix
       - /etc/timezone:/etc/timezone
