@@ -12,4 +12,4 @@ RUN apt install -y ros-humble-gazebo-* ros-humble-cartographer ros-humble-cartog
 
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /root/.bashrc
 RUN echo "export ROS_DOMAIN_ID=30 #TURTLEBOT3" >> /root/.bashrc
-RUN export TURTLEBOT3_MODEL=waffle_pi
+RUN echo "export TURTLEBOT3_MODEL=waffle_pi" >> /root/.bashrc
